@@ -7,7 +7,7 @@ const App = () => {
 
   useEffect(() => {
     // Fetch data from the Node.js server
-    fetch('https://portal-nodejs-server-g8bnecdacgf3eddb.centralus-01.azurewebsites.net/')  // Replace with your backend URL when deployed
+    fetch('https://cli-nodejs-server.azurewebsites.net/')  // Replace with your backend URL when deployed
       .then((response) => {
         if (!response.ok) {
           throw new Error('Network response was not ok');
@@ -30,7 +30,7 @@ const App = () => {
 
   return (
     <div>
-      <h1>Message from Node.js Server:</h1>
+      <h1>Message from CLI Node.js Server:</h1>
       <p>{message}</p>
     </div>
   );
